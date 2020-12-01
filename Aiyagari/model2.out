@@ -1,0 +1,490 @@
+ --------- Aiyagari Type Model ------------------
+------------------------------------------
+    iter     erorrK     meanK      Kold
+    1.0000    0.4912    1.5264    2.7053
+
+    2.0000    0.3957    1.6347    2.4912
+
+    3.0000    0.2953    1.7555    2.3440
+
+    4.0000    0.1992    1.8771    2.2507
+
+    5.0000    0.1209    1.9786    2.1962
+
+    6.0000    0.0659    2.0514    2.1673
+
+    7.0000    0.0335    2.0947    2.1528
+
+    8.0000    0.0169    2.1165    2.1455
+
+    9.0000    0.0074    2.1296    2.1423
+
+   10.0000    0.0037    2.1344    2.1407
+
+   11.0000    0.0016    2.1373    2.1400
+
+   12.0000    0.0006    2.1388    2.1398
+
+PARAMETER VALUES
+    sigma      beta      delta       A      alpha      theta
+  Columns 1 through 5
+
+    2.0000    0.9000    0.9750    1.0000    0.3600
+
+  Column 6
+
+    0.0500
+
+EQUILIBRIUM RESULTS 
+      K         N        wage      rent
+    2.1398    0.3400    1.2411    0.1109
+
+-----------------------------------------
+------- Results -------
+Y=   0.65929464
+K=   2.13978210
+H=   0.34000000
+N=   0.34000000
+R=   1.08591240
+w=   1.24107727
+tauL=   0.00000000
+tauK=   0.00000000
+-----------------------
+K/Y=   3.24556271
+-----------------------
+SIMULATING LIFE HISTORY
+{Undefined function or variable 'markov'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('AiyagariCode', 'C:\Dropbox\ANUTeaching\ECON8022_Graduate_MacroTheory\3-Tutorials\Tutorial_9_Aiyagari\AiyagariCode.m', 223)" style="font-weight:bold">AiyagariCode</a> (<a href="matlab: opentoline('C:\Dropbox\ANUTeaching\ECON8022_Graduate_MacroTheory\3-Tutorials\Tutorial_9_Aiyagari\AiyagariCode.m',223,0)">line 223</a>)
+[chain,state] = markov(prob,n,s0);
+} 
+% break
+%
+%    simulate life histories of the agent
+%
+disp('SIMULATING LIFE HISTORY');
+SIMULATING LIFE HISTORY
+k = Kold;               % initial level of capital 
+n = 100;                % number of periods to simulate
+s0 = 1;                 % initial state 
+hist = zeros(n-1,2);
+cons = zeros(n-1,1);
+invest = zeros(n-1,1);
+grid = [ (0:inckap:maxkap)' ];  
+[chain,state] = markov(prob,n,s0);
+{Undefined function or variable 'markov'.
+} 
+disp('SIMULATING LIFE HISTORY');
+SIMULATING LIFE HISTORY
+k = Kold;               % initial level of capital 
+n = 100;                % number of periods to simulate
+s0 = 1;                 % initial state 
+hist = zeros(n-1,2);
+cons = zeros(n-1,1);
+invest = zeros(n-1,1);
+grid = [ (0:inckap:maxkap)' ];  
+[chain,state] = markov(prob,n,s0);
+{Undefined function or variable 'markov'.
+} 
+%
+disp('SIMULATING LIFE HISTORY');
+SIMULATING LIFE HISTORY
+k = Kold;               % initial level of capital 
+n = 100;                % number of periods to simulate
+s0 = 1;                 % initial state 
+hist = zeros(n-1,2);
+cons = zeros(n-1,1);
+invest = zeros(n-1,1);
+grid = [ (0:inckap:maxkap)' ];  
+[chain,state] = markov1(prob,n,s0);
+{Attempt to execute SCRIPT markov1 as a function:
+C:\Dropbox\ANUTeaching\ECON8022_Graduate_MacroTheory\3-Tutorials\Tutorial_9_Aiyagari\markov1.m} 
+disp('SIMULATING LIFE HISTORY');
+SIMULATING LIFE HISTORY
+k = Kold;               % initial level of capital 
+n = 100;                % number of periods to simulate
+s0 = 1;                 % initial state 
+hist = zeros(n-1,2);
+cons = zeros(n-1,1);
+invest = zeros(n-1,1);
+grid = [ (0:inckap:maxkap)' ];  
+[chain,state] = markov(prob,n,s0);
+{Undefined function or variable 'markov'.
+} 
+AiyagariCode
+ --------- Aiyagari Type Model ------------------
+------------------------------------------
+    iter     erorrK     meanK      Kold
+    1.0000    0.4912    1.5264    2.7053
+
+    2.0000    0.3957    1.6347    2.4912
+
+    3.0000    0.2953    1.7555    2.3440
+
+    4.0000    0.1992    1.8771    2.2507
+
+    5.0000    0.1209    1.9786    2.1962
+
+    6.0000    0.0659    2.0514    2.1673
+
+    7.0000    0.0335    2.0947    2.1528
+
+    8.0000    0.0169    2.1165    2.1455
+
+    9.0000    0.0074    2.1296    2.1423
+
+   10.0000    0.0037    2.1344    2.1407
+
+   11.0000    0.0016    2.1373    2.1400
+
+   12.0000    0.0006    2.1388    2.1398
+
+PARAMETER VALUES
+    sigma      beta      delta       A      alpha      theta
+  Columns 1 through 5
+
+    2.0000    0.9000    0.9750    1.0000    0.3600
+
+  Column 6
+
+    0.0500
+
+EQUILIBRIUM RESULTS 
+      K         N        wage      rent
+    2.1398    0.3400    1.2411    0.1109
+
+-----------------------------------------
+------- Results -------
+Y=   0.65929464
+K=   2.13978210
+H=   0.34000000
+N=   0.34000000
+R=   1.08591240
+w=   1.24107727
+tauL=   0.00000000
+tauK=   0.00000000
+-----------------------
+K/Y=   3.24556271
+-----------------------
+Elapsed time is 94.274046 seconds.
+ --------- Aiyagari Type Model ------------------
+------------------------------------------
+    iter     erorrK     meanK      Kold
+    1.0000    0.4912    1.5264    2.7053
+
+    2.0000    0.3957    1.6347    2.4912
+
+    3.0000    0.2953    1.7555    2.3440
+
+{Operation terminated by user during
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('AiyagariCode', 'C:\Dropbox\ANUTeaching\ECON8022_Graduate_MacroTheory\zECON8022_2019\3-Tutorials\Tutorial_10_Aiyagari\AiyagariCode.m', 101)" style="font-weight:bold">AiyagariCode</a> (<a href="matlab: opentoline('C:\Dropbox\ANUTeaching\ECON8022_Graduate_MacroTheory\zECON8022_2019\3-Tutorials\Tutorial_10_Aiyagari\AiyagariCode.m',101,0)">line 101</a>)
+} 
+uiopen('C:\Dropbox\ANUTeaching\ECON8022_Graduate_MacroTheory\zECON8022_2019\3-Tutorials\Tutorial_10_Aiyagari\AiyagariCode.m',1)
+AiyagariCode
+ --------- Aiyagari Type Model ------------------
+------------------------------------------
+    iter     erorrK     meanK      Kold
+    1.0000    0.4912    1.5264    2.7053
+
+    2.0000    0.3957    1.6347    2.4912
+
+    3.0000    0.2953    1.7555    2.3440
+
+    4.0000    0.1992    1.8771    2.2507
+
+    5.0000    0.1209    1.9786    2.1962
+
+    6.0000    0.0659    2.0514    2.1673
+
+    7.0000    0.0335    2.0947    2.1528
+
+    8.0000    0.0169    2.1165    2.1455
+
+    9.0000    0.0074    2.1296    2.1423
+
+   10.0000    0.0037    2.1344    2.1407
+
+   11.0000    0.0016    2.1373    2.1400
+
+   12.0000    0.0006    2.1388    2.1398
+
+PARAMETER VALUES
+    sigma      beta      delta       A      alpha      theta
+  Columns 1 through 4
+
+    2.0000    0.9000    0.9750    1.0000
+
+  Columns 5 through 6
+
+    0.3600    0.0500
+
+EQUILIBRIUM RESULTS 
+      K         N        wage      rent
+    2.1398    0.3400    1.2411    0.1109
+
+-----------------------------------------
+------- Results -------
+Y=   0.65929464
+K=   2.13978210
+H=   0.34000000
+N=   0.34000000
+R=   1.08591240
+w=   1.24107727
+tauL=   0.00000000
+tauK=   0.00000000
+-----------------------
+K/Y=   3.24556271
+-----------------------
+Elapsed time is 84.125410 seconds.
+HuggetCode_v0
+if system_dependent('IsDebugMode')==1, dbcont; end
+Elapsed time is 12.166498 seconds.
+uiopen('C:\Dropbox\ANUTeaching\ECON8022_Graduate_MacroTheory\zECON8022_2019\3-Tutorials\Tutorial_9_Huggett\HuggetCode_v0.m',1)
+HuggetCode_v0
+Elapsed time is 1.749748 seconds.
+AiyagariCode
+ --------- Aiyagari Type Model ------------------
+------------------------------------------
+    iter     erorrK     meanK      Kold
+    1.0000    0.4912    1.5264    2.7053
+
+    2.0000    0.3957    1.6347    2.4912
+
+    3.0000    0.2953    1.7555    2.3440
+
+    4.0000    0.1992    1.8771    2.2507
+
+    5.0000    0.1209    1.9786    2.1962
+
+    6.0000    0.0659    2.0514    2.1673
+
+    7.0000    0.0335    2.0947    2.1528
+
+    8.0000    0.0169    2.1165    2.1455
+
+    9.0000    0.0074    2.1296    2.1423
+
+   10.0000    0.0037    2.1344    2.1407
+
+   11.0000    0.0016    2.1373    2.1400
+
+   12.0000    0.0006    2.1388    2.1398
+
+PARAMETER VALUES
+    sigma      beta      delta       A      alpha      theta
+  Columns 1 through 5
+
+    2.0000    0.9000    0.9750    1.0000    0.3600
+
+  Column 6
+
+    0.0500
+
+EQUILIBRIUM RESULTS 
+      K         N        wage      rent
+    2.1398    0.3400    1.2411    0.1109
+
+-----------------------------------------
+------- Results -------
+Y=   0.65929464
+K=   2.13978210
+H=   0.34000000
+N=   0.34000000
+R=   1.08591240
+w=   1.24107727
+tauL=   0.00000000
+tauK=   0.00000000
+-----------------------
+K/Y=   3.24556271
+-----------------------
+Elapsed time is 90.990965 seconds.
+Assigment_2_code_example
+
+iter =
+
+     1
+
+
+iter =
+
+     2
+
+
+iter =
+
+     3
+
+
+iter =
+
+     4
+
+
+iter =
+
+     5
+
+
+iter =
+
+     6
+
+
+iter =
+
+     7
+
+
+iter =
+
+     8
+
+
+iter =
+
+     9
+
+
+iter =
+
+    10
+
+
+iter =
+
+    11
+
+
+iter =
+
+    12
+
+
+iter =
+
+    13
+
+
+iter =
+
+    14
+
+
+iter =
+
+    15
+
+
+iter =
+
+    16
+
+
+iter =
+
+    17
+
+
+iter =
+
+    18
+
+
+iter =
+
+    19
+
+
+iter =
+
+    20
+
+
+iter =
+
+    21
+
+
+iter =
+
+    22
+
+
+iter =
+
+    23
+
+
+iter =
+
+    24
+
+
+iter =
+
+    25
+
+
+iter =
+
+    26
+
+
+iter =
+
+    27
+
+
+iter =
+
+    28
+
+
+iter =
+
+    29
+
+
+iter =
+
+    30
+
+
+iter =
+
+    31
+
+
+iter =
+
+    32
+
+
+iter =
+
+    33
+
+
+iter =
+
+    34
+
+--------- Results --------- 
+Y    = 1.6139
+K    = 0.74125
+N    = 2.5
+r    = 0.01483
+w    = 0.41315
+error= 9.5352e-05
+--------------------------- 
+--- Life-cycle profiles --- 
+c_1 = 0.32301
+c_2 = 0.31
+c_3 = 0.29751
+c_4 = 0.28553
+s_1 = 0.090145
+s_2 = 0.42215
+s_3 = 0.22895
+s_4 = 1.1102e-16
+--------------------------- 
+Elapsed time is 1.135743 seconds.
